@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "844662951423",
+    "project_id": "lesson-3d006",
+    "storage_bucket": "lesson-3d006.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844662951423:android:ab61521cdcd6cb35b56bca",
+        "android_client_info": {
+          "package_name": "com.example.firebase_projec"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD86ThUgVaFwE2cLCAeW0EeV263N1_KXQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844662951423:android:7a55e40298ace268b56bca",
+        "android_client_info": {
+          "package_name": "com.example.firebase_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD86ThUgVaFwE2cLCAeW0EeV263N1_KXQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
