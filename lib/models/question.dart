@@ -1,29 +1,28 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_project/models/variant.dart';
 
 class Question {
   String id;
-  String question;
+  String text;
   String answer;
   List<Variant> variants;
 
   Question({
     required this.id,
-    required this.question,
+    required this.text,
     required this.answer,
     required this.variants,
   });
 
-  factory Question.fromJson(QueryDocumentSnapshot query) {
-    Map<String, dynamic> variantsMap = query["variants"];
+  factory Question.fromMap(String id, Map<String, dynamic> data) {
+    Map<String, dynamic> variantsMap = data['variants'] as Map<String, dynamic>;
     List<Variant> variantsList = variantsMap.entries
         .map((entry) => Variant(id: entry.key, variant: entry.value))
         .toList();
 
     return Question(
-      id: query.id,
-      question: query["question"],
-      answer: query["answer"],
+      id: id,
+      text: data['question'],
+      answer: data['answer'],
       variants: variantsList,
     );
   }

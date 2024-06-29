@@ -5,4 +5,10 @@ class QuizFirebaseServices {
   Stream<QuerySnapshot> getQuizzes() async* {
     yield* _quizzesCollection.snapshots();
   }
+
+  void editTittle(String id, String title) {
+    _quizzesCollection.doc(id).update({
+      "title": title,
+    });
+  }
 }
